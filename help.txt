@@ -1,0 +1,110 @@
+Aspectos basicos a considerar de un formulario:
+Al Chequear ciertos campos se muestra el input o la opcion
+
+Formulario:
+- Ancho (input)
+- Color Fondo (input)
+- Borde (check)
+- Color Borde (input)
+- Borde Redondeado (check)
+- Sombra (check)
+
+Encabezado:
+- Tamaño de Fuente [9, 70]
+- Familia [Aria, Verdana, Thaoma, Impact]
+- Tipo (Normal, Italic, Blod)
+- Color de Texto
+- Estilo [Shadow, Dark, Light]
+
+Subencabezado:
+- Tamaño de Fuente [9, 70]
+- Tipo (Normal, Italic, Blod)
+- Color de Texto
+- Estilo [Shadow, Dark, Light]
+
+Nombre Placeholder
+Apellido Placeholder
+Email Placeholder
+Telefono Placeholder
+Movil Placeholder
+Skype Placeholder
+
+Boton Color
+Boton Texto
+boton color texto
+
+Privacidad
+
+
+Cosas faltantes:
+texto del boton
+remitente (email)
+email a mostrar
+vista previa
+mensaje en html con tinyMCE
+checks para seleccionar multiples formularios y poder ejecutar acciones masivas (borrar)
+
+integrar con clickatell.com
+
+Modelo:
+
+Tabla Formularios:
+id
+rabud_name
+rabud_shortcode
+rabud_style
+rabud_label_firstname
+rabud_label_lastname
+rabud_label_email
+rabud_label_phone
+rabud_label_cellphone
+rabud_label_skype
+rabud_redirect
+rabud_url
+rabud_send_email
+rabud_subject
+rabud_message
+rabud_creation
+rabud_views
+rabud_unique_views
+rabud_optins
+
+rabud_forms ( `id` INT(10) NOT NULL AUTO_INCREMENT , `rabud_name` VARCHAR(25) NOT NULL , `rabud_shorcode` VARCHAR(25) NOT NULL , `rabud_style` VARCHAR(25) NOT NULL , `rabud_label_firstname` VARCHAR(5) NOT NULL , `rabud_label_lastname` VARCHAR(5) NOT NULL , `rabud_label_email` VARCHAR(5) NOT NULL , `rabud_label_phone` VARCHAR(5) NOT NULL , `rabud_label_cellphone` VARCHAR(5) NOT NULL , `rabud_label_skype` VARCHAR(5) NOT NULL , `rabud_redirect` VARCHAR(5) NOT NULL , `rabud_url` VARCHAR(250) NOT NULL , `rabud_send_email` VARCHAR(5) NOT NULL , `rabud_subject` VARCHAR(250) NOT NULL , `rabud_message` VARCHAR(1000) NOT NULL , `rabud_creation` DATE NOT NULL , `rabud_views` VARCHAR(10) NOT NULL , `rabud_unique_views` VARCHAR(10) NOT NULL , `rabud_optins` VARCHAR(10) NOT NULL )
+
+********************
+Tabla Usuarios:
+id
+rabud_form (Esto es lo mismo que "Shortcode")
+rabud_firstname
+rabud_lastname
+rabud_email
+rabud_phone
+rabud_cellphone
+rabud_skype
+rabud_date
+
+rabud_users ( `id` INT(10) NOT NULL AUTO_INCREMENT , `rabud_form` VARCHAR(25) NOT NULL , `rabud_firstname` VARCHAR(50) NOT NULL , `rabud_lastname` VARCHAR(50) NOT NULL , `rabud_email` VARCHAR(100) NOT NULL , `rabud_phone` VARCHAR(25) NOT NULL , `rabud_cellphone` VARCHAR(25) NOT NULL , `rabud_skype` VARCHAR(25) NOT NULL , `rabud_date` DATE NOT NULL , PRIMARY KEY (`id`) )
+
+
+
+Respaldo: 
+
+
+$rabud_id = $rabud_form->id;
+			$rabud_name = $rabud_form->rabud_name;
+			$rabud_shortcode = $rabud_form->rabud_shortcode;
+			$rabud_style = $rabud_form->rabud_style;
+			$rabud_label_firstname = $rabud_form->rabud_label_firstname;
+			$rabud_label_lastname = $rabud_form->rabud_label_lastname;
+			$rabud_label_phone = $rabud_form->rabud_label_phone;
+			$rabud_label_cellphone = $rabud_form->rabud_label_cellphone;
+			$rabud_label_skype = $rabud_form->rabud_label_skype;
+			$rabud_redirect = $rabud_form->rabud_redirect;
+			$rabud_url = $rabud_form->rabud_url;
+			$rabud_send_email = $rabud_form->rabud_send_email;
+			$rabud_subject = $rabud_form->rabud_subject;
+			$rabud_message = $rabud_form->rabud_message;
+			$rabud_creation = $rabud_form->rabud_creation;
+			$rabud_views = $rabud_form->rabud_views;
+			$rabud_unique_views = $rabud_form->rabud_unique_views;
+			$rabud_optins = $rabud_form->rabud_optins;

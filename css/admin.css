@@ -1,0 +1,63 @@
+.rabud-style input[type="radio"]{
+	width: 128px;
+	height: 128px;
+	background: url(https://lh6.googleusercontent.com/-BLr06x-1tcI/VNsPkODypUI/AAAAAAAAALE/cfltO_EeqVg/s150-c/photo.jpg);
+	border-radius: 0px;
+	margin: 7px;
+}
+
+#rabud-name {
+	padding: 3px 8px;
+	font-size: 1.7em;
+	line-height: 100%;
+	height: 1.7em;
+	width: 100%;
+	outline: 0;
+	margin: 0;
+	background-color: #fff;
+}
+
+.rabud-panel {
+	border: 1px solid #e5e5e5;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.04);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.rabud-panel .title{
+	border-bottom: 1px solid #e5e5e5;
+	margin: 0px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+
+.rabud-color-negro { background: #000000; color: #ffffff; }
+.rabud-color-turquesa { background: #1abc9c; color: #ffffff; }
+.rabud-color-turquesa-o { background: #16a085; color: #ffffff; }
+.rabud-color-verde { background: #2ecc71; color: #ffffff; }
+.rabud-color-verde-o { background: #27ae60; color: #ffffff; }
+.rabud-color-azul { background: #3498db; color: #ffffff; }
+.rabud-color-azul-o { background: #2980b9; color: #ffffff; }
+.rabud-color-morado { background: #9b59b6; color: #ffffff; }
+.rabud-color-morado-o { background: #8e44ad; color: #ffffff; }
+.rabud-color-azul-m { background: #34495e; color: #ffffff; }
+.rabud-color-azul-m-o { background: #2c3e50; color: #ffffff; }
+.rabud-color-amarillo { background: #f1c40f; color: #ffffff; }
+.rabud-color-amarillo-o { background: #f39c12; color: #ffffff; }
+.rabud-color-naranja { background: #e67e22; color: #ffffff; }
+.rabud-color-naranja-o { background: #d35400; color: #ffffff; }
+.rabud-color-rojo { background: #e74c3c; color: #ffffff; }
+.rabud-color-rojo-o { background: #c0392b; color: #ffffff; }
+.rabud-color-gris-c { background: #bdc3c7; color: #ffffff; }
+.rabud-color-gris { background: #95a5a6; color: #ffffff; }
+.rabud-color-gris-o { background: #7f8c8d; color: #ffffff; }
+
+.rabud-preview {
+	padding: 30px;
+	position:fixed;
+	margin-right: 20px;
+	width: auto;
+	background: #3498db;
+}
