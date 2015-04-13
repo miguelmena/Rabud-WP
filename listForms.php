@@ -1,17 +1,16 @@
 <div class="wrap">
 	<br>
-	<h1><span class="dashicons dashicons-groups"></span> RABUD - Record And Backup User Data <?= get_the_date(); ?></h1>
+	<h1>
+		<span class="dashicons dashicons-format-aside"></span> RABUD - Lista de Formularios <a href="#" class="add-new-h2">Nuevo Formulario</a>
+	</h1>
 	<?php
-		// ******* AGREGANDO CONTROLES *******
-		require "controllers/newFormController.php";
-		require "controllers/listFormsController.php";
-		require "controllers/listUsersController.php";
+// ******* AGREGANDO CONTROLES *******
+require "controllers/listFormsController.php";
 
-		// ******* AGREGANDO VISTAS *******
-		require "views/newForm.php";
-		//require "views/listForms.php";
-		//require "views/listUsers.php";
-	?>
+// ******* AGREGANDO VISTAS *******
+require "views/listForms.php";
+
+?>
 	<script type="text/javascript">
 		document.getElementById('rabud-name').onkeyup = function() {
 			document.getElementById('rabud-shortcode').value = url_slug(this.value);

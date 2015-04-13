@@ -1,7 +1,5 @@
 <form name="" id="" method="post" action="">
 	<input type="hidden" name="newFormSend" value="true">
-	<h2><span class="dashicons dashicons-format-aside"></span> Nuevo Formulario</h2>
-	<br>
 	<table width="100%">
 		<tr>
 			<td width="66%" valign="top">

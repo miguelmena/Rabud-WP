@@ -1,8 +1,3 @@
-<h2>
-	<span class="dashicons dashicons-feedback" style="margin-top: 5px;"></span> Lista de Formularios 
-	<a href="#TB_inline?width=1000&height=550&inlineId=newForm" class="add-new-h2 thickbox">Nuevo Formulario</a>
-</h2>
-<br>
 <table class="wp-list-table widefat fixed">
 	<thead>
 		<tr>
